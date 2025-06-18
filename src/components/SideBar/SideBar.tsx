@@ -93,7 +93,7 @@ const SideBar = () => {
             className={`d-flex align-items-center gap-2 fw-medium cursor-pointer bg-transparent border-0 text-black fs-17 logoutButton ${isCollapsed ? 'collapsed-link' : ''}`}
           >
             {!isCollapsed && "Logout"}
-            <img src="task5/images/Home/sidebar/logoutIcon.svg" alt="Logout" className="logoutIcon" />
+            <img src="/task5/images/Home/sidebar/logoutIcon.svg" alt="Logout" className="logoutIcon" />
           </Button>
         </div>
       </div>

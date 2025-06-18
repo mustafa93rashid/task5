@@ -62,7 +62,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         className="p-4 border rounded-circle bg-white d-flex justify-content-center align-items-center pagBtn"
         disabled={currentPage === 1}
       >
-        <img src="task5\images\Home\Pagination\Prev.svg" alt="" />
+        <img src="/task5/images/Home/Pagination/Prev.svg" alt="" />
         {/* <IoIosArrowBack /> */}
       </button>
 
@@ -73,7 +73,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         className="p-4 border rounded-circle bg-white d-flex justify-content-center align-items-center pagBtn"
         disabled={currentPage === totalPages}
       >
-        <img src="task5\images\Home\Pagination\Next.svg" alt="" />
+        <img src="/task5/images/Home/Pagination/Next.svg" alt="" />
 
         {/* <IoIosArrowForward /> */}
       </button>

@@ -48,7 +48,7 @@ const PhotoUploadWidget = forwardRef<HTMLInputElement, Props>(({ initialImage, a
         {preview ? (
           <img src={preview} alt="Preview" className="upload-preview" />
         ) : (
-          <img src="task5/images/Auth/Uploadicon.svg" alt="profie picture" className={`${addEditPageIconClass}`} />
+          <img src="/task5/images/Auth/Uploadicon.svg" alt="profie picture" className={`${addEditPageIconClass}`} />
         )}
       </div>
     </Form.Group>

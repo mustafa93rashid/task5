@@ -19,7 +19,7 @@ export const logAction = (type: NotificationType, item: { name: string; price: s
     timestamp: new Date().toLocaleString(),
   };
 
-  const updatedLogs = [newLog, ...logs.slice(0, 7)];
+  const updatedLogs = [newLog, ...logs.slice(0, 6)];
   localStorage.setItem("notifications", JSON.stringify(updatedLogs));
 
   window.dispatchEvent(new Event("notificationLogUpdated"));

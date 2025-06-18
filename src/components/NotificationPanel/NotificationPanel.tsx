@@ -13,7 +13,7 @@ type NotificationLog = {
 
 const NotificationsTable = ({ logs, onClear, }: { logs: NotificationLog[]; onClear: () => void; }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 7;
+  const itemsPerPage = 6;
   const [currentLogs, setCurrentLogs] = useState<NotificationLog[]>([]);
 
   const totalPages = Math.ceil(logs.length / itemsPerPage);

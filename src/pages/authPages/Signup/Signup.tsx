@@ -131,15 +131,15 @@ const Signup = () => {
 
         <Row className="w-100 ">
           {signupFields.map((field, index) => (
-            <Col lg={field.col} className="mb-1 mb-lg-3" key={index}>
+            <Col lg={field.col} className="mb-0 mb-lg-3" key={index}>
               <Form.Group controlId={field.controlId} className="position-relative">
                 <Form.Label
                   dangerouslySetInnerHTML={{ __html: field.label }}
-                  className="text-gray fs-14"
+                  className="text-gray fs-14 SignUplabel"
                 />
                 <div className="position-relative">
                   <Form.Control
-                    className="px-2 px-lg-3 py-2 loginForm"
+                    className="px-2 px-lg-3 py-2"
                     type={
                       field.controlId === "password"
                         ? showPassword

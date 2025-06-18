@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+    .title-logo {
+        width: 90px;
+        height: 25px;
+    }
+
+    .title-heading {
+        font-size: 14px;
+    }
+
+    .title-subheading {
+        font-size: 10px;
+    }
+
+}

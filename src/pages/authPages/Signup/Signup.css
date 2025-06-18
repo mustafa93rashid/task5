@@ -10,8 +10,12 @@
 }
 
 @media (max-width: 992px) {
-.SignUpform {
-  padding: 20px 15px 10px 20px !important;
-}
-  
+  .SignUpform {
+    min-width: 300px;
+    padding: 20px 15px 10px 20px !important;
+  }
+
+  .SignUplabel {
+    font-size: 10px !important;
+  }
 }

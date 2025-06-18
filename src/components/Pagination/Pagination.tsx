@@ -1,5 +1,4 @@
 import React from "react";
-// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./Pagination.css";
 
 type PaginationProps = {
@@ -63,7 +62,6 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         disabled={currentPage === 1}
       >
         <img src="/task5/images/Home/Pagination/Prev.svg" alt="" />
-        {/* <IoIosArrowBack /> */}
       </button>
 
       {renderPageNumbers()}
@@ -75,7 +73,6 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
       >
         <img src="/task5/images/Home/Pagination/Next.svg" alt="" />
 
-        {/* <IoIosArrowForward /> */}
       </button>
     </div>
   );

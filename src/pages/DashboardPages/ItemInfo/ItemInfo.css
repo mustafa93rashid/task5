@@ -1,0 +1,61 @@
+.itemShowWapper {
+  padding: 20px 60px 0 60px;
+}
+
+.itemShowTitle {
+  font-size: 60px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.itemShowSpan {
+  font-size: 40px;
+  color: #8080808C;
+}
+
+
+.itemShowImage {
+  width: 280px;
+  height: 280px;
+}
+
+.itemShowPrice {
+  font-size: 60px;
+  margin-top: 18px;
+}
+
+@media (max-width: 1200px) {
+
+  .itemShowSpan {
+    font-size: 30px;
+  }
+
+  .itemShowPrice {
+    font-size: 35px;
+  }
+
+}
+
+@media (max-width: 1366px) {
+
+  .itemShowTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 32px;
+  }
+
+  .itemShowSpan {
+    font-size: 18px;
+  }
+
+  .itemShowPrice {
+    font-size: 24px;
+  }
+
+  .itemShowImage {
+  width: 200px;
+  height: 200px;
+}
+
+}
+

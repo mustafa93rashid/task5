@@ -1,0 +1,144 @@
+.itemListContainer {
+    gap: 40px;
+}
+
+.itemCard {
+    width: 208px;
+    height: 208px;
+    box-shadow: 8px 8px 4px 0px #00000040;
+}
+
+.overlay {
+    inset: 0;
+    background: rgba(242, 234, 225, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.itemCard:hover .overlay {
+    opacity: 1;
+}
+
+.item-title {
+    top: 20%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.itemCard:hover .item-title {
+    opacity: 1;
+}
+
+.itemCard .item-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.itemCard:hover .item-content {
+    opacity: 1;
+}
+
+.deleteButton {
+    width: 81px;
+    height: 34px;
+    background-color: #FE0000 !important;
+}
+
+.deleteButton:hover {
+    background-color: #FE0000 !important;
+}
+
+.editButton {
+    width: 81px;
+    height: 34px;
+}
+
+.editButton:hover {
+    background-color: var(--orange00) !important;
+}
+
+@media (max-width: 1365px) {
+    .itemCard {
+        width: 180px;
+        height: 180px;
+    }
+
+    .deleteButton {
+        width: 60px;
+        height: 30px;
+        font-size: 12px !important;
+
+    }
+
+    .editButton {
+        width: 60px;
+        height: 30px;
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .itemListContainer {
+        gap: 15px;
+    }
+
+    .itemCard {
+        width: 163px;
+        height: 163px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .itemCard {
+        width: 152px;
+        height: 152px;
+    }
+}
+
+@media (max-width: 992px) {
+    .itemListContainer {
+        gap: 15px;
+    }
+
+    .itemCard {
+        width: 155px;
+        height: 155px;
+    }
+}
+
+@media (max-width: 768px) {
+    .itemListContainer {
+        gap: 15px;
+    }
+
+    .itemCard {
+        width: 130px;
+        height: 130px;
+    }
+
+    .deleteButton {
+        width: 40px;
+        height: 25px;
+        font-size: 10px !important;
+
+    }
+
+    .editButton {
+        width: 40px ;
+        height: 25px;
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .itemListContainer {
+        gap: 10px;
+    }
+
+    .itemCard {
+        width: 100px;
+        height: 100px;
+    }
+
+}

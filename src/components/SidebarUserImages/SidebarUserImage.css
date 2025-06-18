@@ -1,0 +1,24 @@
+.sidebarUserImage {
+    width: 141px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sideBarUserName {
+    font-size: 17px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebarUserImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sideBarUserName:hover {
+    color: var(--orange00);
+    transform: scale(1.03);
+}
+
+.collapsed-user-img {
+  width: 50px !important;
+  height: 50px !important;
+}

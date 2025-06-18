@@ -1,0 +1,11 @@
+.backwordHome img {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.backwordHome img:hover {
+    background-color: #FEAF00 !important;
+    transform: scale(1.05);
+    border-color: #FEAF00 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

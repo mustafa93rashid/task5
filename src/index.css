@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+
+  --orange00: #FEAF00;
+
+  --gray01: #6C6C6C;
+  --gray02: #CDCDCD;
+  --gray03: #E5E5E5;
+
+
+  --beige: #F2EAE1;
+
+  --black0105: #22222280;
+
+  --white01: #F5F5F5;
+  --white26: #FFFFFF26;
+}
+
+.boxShadow {
+  box-shadow: 2px 5px 10px 0px #0000001A;
+}
+
+
+.bg-orange {
+  background-color: var(--orange00);
+}
+
+.bg-softBeige {
+  background-color: var(--beige);
+}
+
+.text-orange {
+  color: #FEAF00 !important;
+}
+
+.text-gray {
+  color: #6C6C6C !important;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-17 {
+  font-size: 17px !important;
+}
+
+
+.fs-22 {
+  font-size: 22px;
+}
+
+
+.form-control:focus {
+  box-shadow: 0 4px 12px rgba(254, 174, 0, 0.158) !important;
+  border-color: #FEAF00 !important;
+}
+
+.form-control::placeholder {
+  color: #CDCDCD !important;
+  font-size: 12px !important;
+}

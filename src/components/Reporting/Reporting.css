@@ -1,0 +1,10 @@
+.report-card {
+  min-width: 180px;
+  transition: transform 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+

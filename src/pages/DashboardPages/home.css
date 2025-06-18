@@ -1,0 +1,19 @@
+.main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.home-content {
+    margin-left: 30px;
+    
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 40px;
+    }
+
+    .home-content {
+        margin-left: 60px;
+    }
+}

@@ -1,0 +1,70 @@
+/* Main sidebar container styles */
+.sideBarContainer {
+    padding: 35px 20px;
+    width: 270px;
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+
+/* Logo image inside the sidebar */
+.sideBarLogo {
+    margin-bottom: 54px;
+    transition: all 0.3s ease;
+}
+
+/* Vertical navigation link group */
+.sideBarLink {
+    margin-top: 91px;
+    gap: 31px;
+}
+
+/* active link styles */
+.active {
+    transition: box-shadow 1s ease;
+}
+
+.active:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Logout button styles */
+.logoutButton {
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for logout button text */
+.logoutButton:hover {
+    color: var(--orange00);
+}
+
+/* Icon inside logout button - transition for hover effect */
+.logoutIcon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover animation for logout icon */
+.logoutButton:hover .logoutIcon {
+    transform: translateX(5px);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(74%) saturate(348%) hue-rotate(1deg) brightness(101%) contrast(101%);
+}
+
+/* Collapsed sidebar state (e.g., on small screens or when toggled) */
+.sideBarContainer.collapsed {
+    width: 80px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive styles for screens smaller than 992px */
+@media (max-width: 992px) {
+
+
+    .sideBarContainer {
+        padding: 20px 10px;
+    }
+
+    .sideBarLink {
+        gap: 20px;
+    }
+}

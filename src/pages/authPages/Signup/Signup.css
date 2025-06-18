@@ -1,0 +1,17 @@
+.SignUpform {
+  padding: 40px 20px 20px 31px !important;
+  width: 33.055556%;
+  max-width: 476px;
+  min-width: 375px;
+}
+
+.row>* {
+  padding-left: 0 !important;
+}
+
+@media (max-width: 992px) {
+.SignUpform {
+  padding: 20px 15px 10px 20px !important;
+}
+  
+}

@@ -1,0 +1,22 @@
+.notiBtn {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.badge {
+  width: 60px !important;
+}
+
+@media (max-width: 992px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table {
+    white-space: nowrap;
+  }
+
+  .badge {
+    padding: 2 20px !important;
+  }
+}

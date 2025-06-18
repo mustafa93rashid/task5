@@ -1,0 +1,39 @@
+.confirmation-overlay {
+    height: 100%;
+    background: #00000080;
+    backdrop-filter: blur(30px);
+    z-index: 1050;
+}
+
+.confirmation-modal {
+    width: 60%;
+    padding: 80px 160px !important;
+}
+
+.confirmationButton {
+    margin-top: 80px;
+    width: 199px;
+    height: 61px;
+}
+
+@media (max-width: 1200px) {
+    .confirmation-modal {
+        padding: 40px 80px !important;
+    }
+
+    .confirmationButton {
+        margin-top: 60px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .confirmation-modal {
+        padding: 20px 40px !important;
+    }
+
+    .confirmationButton {
+        margin-top: 40px;
+        width: 80px;
+    }
+}

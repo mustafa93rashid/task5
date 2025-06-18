@@ -1,0 +1,32 @@
+/* ==== Submit Button Hover Effect ==== */
+.btnHover {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btnHover:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: var(--orange00) !important;
+}
+
+/* ==== Link Hover with Underline Animation ==== */
+.linkUnderline {
+    position: relative;
+    color: var(--orange00);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkUnderline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--orange00);
+    transition: width 0.3s ease;
+}
+
+.linkUnderline:hover::after {
+    width: 100%;
+}

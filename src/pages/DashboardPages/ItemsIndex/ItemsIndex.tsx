@@ -35,19 +35,13 @@ const ItemsIndex = () => {
     fetchItems();
   }, []);
 
-  const handleSearch = () => {
-    const query = inputRef.current?.value.trim().toLowerCase() || "";
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value.trim().toLowerCase();
     const filtered = items.filter((item) =>
       item.name.toLowerCase().includes(query)
     );
     setFilteredItems(filtered);
     setCurrentPage(1);
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      handleSearch();
-    }
   };
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -65,7 +59,7 @@ const ItemsIndex = () => {
             ref={inputRef}
             type="text"
             placeholder="Search product by name"
-            onKeyDown={handleKeyDown}
+            onChange={handleSearch}
             className="border-1 rounded-2 pe-5"
           />
           <img

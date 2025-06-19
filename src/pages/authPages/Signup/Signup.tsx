@@ -137,7 +137,7 @@ const Signup = () => {
                 />
                 <div className="position-relative">
                   <Form.Control
-                    className="px-2 px-lg-3 py-2"
+                    className="px-2 px-lg-3 py-2 signup-input"
                     type={
                       field.controlId === "password"
                         ? showPassword

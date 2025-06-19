@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 1365px) {
+    .itemListContainer {
+    gap: 32px;
+}
+
     .itemCard {
         width: 180px;
         height: 180px;

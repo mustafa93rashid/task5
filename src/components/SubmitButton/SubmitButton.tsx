@@ -14,7 +14,7 @@ const SubmitButton = ({ buttonText, to="", linkText, linkLabel, onClick, type = 
 
       {/* Optional link section under the button */}
       {linkText && linkLabel && (
-        <p className="mt-2 mt-lg-4 fs-14 text-gray">
+        <p className="mt-2 mt-lg-4 fs-14 text-gray parUnderline">
           {linkText}
           <Link to={to} className="linkUnderline">
             {linkLabel}

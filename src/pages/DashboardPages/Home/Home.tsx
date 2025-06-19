@@ -44,7 +44,7 @@ const Home = () => {
   const isHomeRoute = location.pathname === "/home";
 
   return (
-    <div className="d-flex" style={{ minHeight: "100vh", minWidth: "100vw" }}>
+    <div className="d-flex" style={{ minHeight: "100vh"}}>
       <SideBar />
 
       <div className="w-100  py-3 d-flex gap-4">

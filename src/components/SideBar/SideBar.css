@@ -56,10 +56,16 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 1366px) {
+
+    .sideBarLink {
+        margin-top: 45px;
+        gap: 15px;
+    }
+}
+
 /* Responsive styles for screens smaller than 992px */
 @media (max-width: 992px) {
-
-
     .sideBarContainer {
         padding: 20px 10px;
     }

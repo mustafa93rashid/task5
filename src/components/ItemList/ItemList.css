@@ -1,5 +1,7 @@
 .itemListContainer {
     gap: 40px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .itemCard {
@@ -60,12 +62,12 @@
 
 @media (max-width: 1365px) {
     .itemListContainer {
-    gap: 32px;
-}
+        gap: 25px;
+    }
 
     .itemCard {
-        width: 180px;
-        height: 180px;
+        width: 163px;
+        height: 163px;
     }
 
     .deleteButton {
@@ -84,11 +86,6 @@
 @media (max-width: 1200px) {
     .itemListContainer {
         gap: 15px;
-    }
-
-    .itemCard {
-        width: 163px;
-        height: 163px;
     }
 }
 
@@ -128,7 +125,7 @@
     }
 
     .editButton {
-        width: 40px ;
+        width: 40px;
         height: 25px;
         font-size: 10px !important;
     }

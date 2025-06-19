@@ -47,7 +47,7 @@ const SideBar = () => {
     <>
       <div className={`sideBarContainer d-flex flex-column align-items-center position-fixed top-0 left-0 h-100 bg-softBeige ${isCollapsed ? 'collapsed' : ''}`}>
 
-        <div className="w-100 d-flex flex-column align-items-center mb-4">
+        <div className="w-100 d-flex flex-column align-items-center mb-0">
           <Button
             variant="link"
             className="toggleButton d-lg-none text-black mb-3 p-0"

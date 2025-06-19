@@ -64,8 +64,8 @@ const ItemList: React.FC<ItemListProps> = ({ items, onDeleteSuccess }) => {
     return (
         <>
             {loading && <Loader />}
-            <div className="container-lg">
-                <div className="d-flex flex-wrap align-center justify-content-center itemListContainer ">
+            <div className="container-md ">
+                <div className="d-flex flex-wrap align-items-center justify-content-center itemListContainer ">
                     {items.map((data) => (
                         <div key={data.id} className="rounded-4 position-relative overflow-hidden itemCard">
                             <Link to={`/home/itemindex/iteminfo/${data.id}`}>

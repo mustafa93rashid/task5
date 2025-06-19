@@ -17,7 +17,7 @@ const SidebarUserImage = ({ showName = true, isCollapsed = false }: SidebarUserI
   }, []); 
   
   return (
-    <div className="d-flex align-items-center justify-content-center flex-column gap-3">
+    <div className="d-flex align-items-center justify-content-center flex-column gap-2">
       <img
         src={userImage || "/task5/images/Home/sidebar/defaultuserimage.jpg"}
         alt="User"

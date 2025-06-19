@@ -15,7 +15,7 @@ const ItemsIndex = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
+  const fetchItems = () => {
     axios
       .get("https://web-production-3ca4c.up.railway.app/api/items", {
         headers: {
@@ -30,6 +30,9 @@ const ItemsIndex = () => {
       .catch(() => {
         setError("⚠️ Failed to load products. Please refresh your page or try again later.");
       });
+  };
+  useEffect(() => {
+    fetchItems();
   }, []);
 
   const handleSearch = () => {
@@ -96,7 +99,7 @@ const ItemsIndex = () => {
           </div>
         ) : (
           <>
-            <ItemList items={currentItems} />
+            <ItemList items={currentItems} onDeleteSuccess={fetchItems} />
             <Pagination
               currentPage={currentPage}
               totalPages={Math.ceil(filteredItems.length / itemsPerPage)}

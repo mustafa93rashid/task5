@@ -38,7 +38,6 @@ ul {
   box-shadow: 2px 5px 10px 0px #0000001A;
 }
 
-
 .bg-orange {
   background-color: var(--orange00);
 }
@@ -67,11 +66,9 @@ ul {
   font-size: 17px !important;
 }
 
-
 .fs-22 {
   font-size: 22px;
 }
-
 
 .form-control:focus {
   box-shadow: 0 4px 12px rgba(254, 174, 0, 0.158) !important;

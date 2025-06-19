@@ -22,7 +22,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
   const renderPageNumbers = () => {
     const pages = [];
 
-    if (totalPages < 10) {
+    if (totalPages < 7) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(createPageButton(i));
       }
@@ -72,7 +72,6 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         disabled={currentPage === totalPages}
       >
         <img src="/task5/images/Home/Pagination/Next.svg" alt="" />
-
       </button>
     </div>
   );

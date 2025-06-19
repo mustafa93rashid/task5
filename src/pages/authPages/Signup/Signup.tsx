@@ -22,7 +22,6 @@ const Signup = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
 
-
   const navigate = useNavigate();
 
   const signupFields = [
@@ -105,7 +104,6 @@ const Signup = () => {
         localStorage.setItem("userName", res.data.data.user.user_name);
         localStorage.setItem("userImage", res.data.data.user.profile_image_url);
         navigate("/home");
-        console.log("User registered successfully:", res.data);
       })
       .catch((err) => {
         setErrors(err.response.data.errors);

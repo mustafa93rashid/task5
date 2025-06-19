@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
-import SideBar from "../../components/SideBar/SideBar";
-import NotificationPanel from "../../components/NotificationPanel/NotificationPanel";
+import SideBar from "../../../components/SideBar/SideBar";
+import NotificationPanel from "../../../components/NotificationPanel/NotificationPanel";
 import "./Home.css";
-import Reporting from "../../components/Reporting/Reporting";
-import TopBar from "../../components/TopBar/TopBar";
+import TopBar from "../../../components/TopBar/TopBar";
 
 type NotificationLog = {
   id: number;
@@ -52,7 +51,6 @@ const Home = () => {
         {isHomeRoute && (
           <div className="home-content w-100">
             <TopBar userName={localStorage.getItem("userName") || "User"} />
-            <Reporting />
             <NotificationPanel logs={logs} onClear={handleClearLogs} />
           </div>
         )}

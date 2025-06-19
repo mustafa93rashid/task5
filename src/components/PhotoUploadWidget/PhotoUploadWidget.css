@@ -3,7 +3,7 @@
   height: 100px;
   border: 2px dashed #cbd5e0;
   background-color: #f9f9ff;
-   cursor: pointer;
+  cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -13,5 +13,5 @@
 }
 
 .upload-box:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }

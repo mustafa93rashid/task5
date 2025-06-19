@@ -2,7 +2,7 @@ import { createHashRouter } from "react-router-dom";
 import Auth from "../pages/authPages/Auth/Auth";
 import Login from "../pages/authPages/Login/Login";
 import Signup from "../pages/authPages/Signup/Signup";
-import Home from "../pages/DashboardPages/Home";
+import Home from "../pages/DashboardPages/Home/Home";
 import AddItem from "../pages/DashboardPages/AddItem/AddItem";
 import EditItem from "../pages/DashboardPages/EditItem/EditItem";
 import ItemInfo from "../pages/DashboardPages/ItemInfo/ItemInfo";

@@ -10,8 +10,12 @@ type NotificationLog = {
   timestamp: string;
   type: "add" | "edit" | "delete";
 };
+interface NotificationsTableProps {
+  logs: NotificationLog[];
+  onClear: () => void;
+}
 
-const NotificationsTable = ({ logs, onClear, }: { logs: NotificationLog[]; onClear: () => void; }) => {
+const NotificationsTable: React.FC<NotificationsTableProps> = ({ logs, onClear }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 6;
   const [currentLogs, setCurrentLogs] = useState<NotificationLog[]>([]);

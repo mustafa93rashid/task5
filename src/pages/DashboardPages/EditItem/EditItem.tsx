@@ -27,7 +27,6 @@ const EditItem = () => {
             ref: name,
             defaultValue: oldData?.name,
             errorKey: "name"
-
         },
         {
             label: "Price",
